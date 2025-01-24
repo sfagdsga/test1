@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<style>
+    body{
+        text-align: center;
+    }
+    .contents{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+         background-color: beige;
+         width: 800px;
+         height: 150px;
+         text-align: center;
+         margin-left: auto;
+         margin-right: auto;
+         
+    }
+    .box{
+         background-color: blue;
+         width: 100px;
+         height: 100px;
+         margin: 0px auto;
+    }
+    .text{
+        background-color: black;
+        width: 800px;
+        height: 50px;
+        color: #fff;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .gazou{
+        margin-left: auto;
+         margin-right: auto;
+    }
+@media(max-width:767px){
+    .contents{
+                grid-template-columns: 1fr 1fr;
+            }
+}
+
+</style>
+<body>
+    <div class="contents">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <diV class="text">
+        文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー
+    </diV>
+    <div style="text-align: center;"><img src="img/kapi.webp" /></div>
+    <label for="name">お名前:</label>
+
+    <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10" />
+    <fieldset>
+        <legend>返信を希望する方はチェックしてください:</legend>
+      
+       
+      
+        <div>
+          <input type="checkbox" id="horns" name="horns" />
+          <label for="horns"></label>
+        </div>
+      </fieldset>
+      <form action="form.php" method="post">
+        <div>
+          <label for="message">message:</label><br>
+          <input type="text" />
+        </div>
+  
+        <div class="button">
+          <button type="submit">メッセージを送信</button>
+        </div>
+      </form>
+</body>
+</html>
